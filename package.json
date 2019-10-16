@@ -14,6 +14,8 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-react-easy": "^0.1.9",
-    "gulp-rename": "^1.4.0"
+    "gulp-rename": "^1.4.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   }
 }

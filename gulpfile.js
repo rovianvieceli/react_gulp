@@ -3,12 +3,12 @@ var rename = require('gulp-rename');
 var reactEasy = require('gulp-react-easy');
 
 gulp.task('watcher', function() {
-  gulp.watch('./src/js/**/*',['build']);
+  gulp.watch('./src/**/*',['build']);
 });
 
 gulp.task('build', function() {
   return reactEasy({
-      file: './src/js/app.jsx',
+      file: './src/app.jsx',
       debug: true // optional, false by default
     })
     .to('app.js')

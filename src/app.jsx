@@ -1,9 +1,10 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
+import Title from './components/title';
 
 const App = (
     <div className="container">
-        <h1>Hello React</h1>
+        <Title />
     </div>
 )
 

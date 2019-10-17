@@ -2,10 +2,8 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var reactEasy = require('gulp-react-easy');
 
-gulp.task('default', ['build','watcher']);
-
 gulp.task('watcher', function() {
-  gulp.watch('./src/js/**/*',['js']);
+  gulp.watch('./src/js/**/*',['build']);
 });
 
 gulp.task('build', function() {
@@ -16,3 +14,5 @@ gulp.task('build', function() {
     .to('app.js')
     .pipe(gulp.dest('./dist/js/'));
 });
+
+gulp.task('default', ['build','watcher']);

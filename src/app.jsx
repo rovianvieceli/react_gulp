@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 
 import Title from './components/header/title';
-import Navbar from './components/navbar/index';
+import Navbar from './components/navbar/navbar';
 
 const App = (
     <div className="root">

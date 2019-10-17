@@ -1,5 +1,7 @@
 import React from 'react';
 
+import NavMenu from './nav-menu';
+
 class Navbar extends React.Component {
     render() {
         const { title, color } = this.props;
@@ -14,13 +16,7 @@ class Navbar extends React.Component {
                 <div className={`nav-wrapper ${color}`}>
                     <div className="container">
                         <a href="#" className="brand-logo">{title}</a>
-                        <ul id="nav-mobile" className="right">
-                            {menus.map((menu, index) => (
-                                <li key={index}>
-                                    <a href={menu.linkTo}>{menu.title}</a>
-                                </li>
-                            ))}
-                        </ul>
+                        <NavMenu menus={menus} />
                     </div>
                 </div>
             </nav>

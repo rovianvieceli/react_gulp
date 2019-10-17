@@ -2,13 +2,13 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var reactEasy = require('gulp-react-easy');
 
-gulp.task('default',['js','w']);
+gulp.task('default', ['build','watcher']);
 
-gulp.task('w', function() {
+gulp.task('watcher', function() {
   gulp.watch('./src/js/**/*',['js']);
 });
 
-gulp.task('js', function() {
+gulp.task('build', function() {
   return reactEasy({
       file: './src/js/app.jsx',
       debug: true // optional, false by default

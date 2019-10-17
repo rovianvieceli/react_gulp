@@ -10,11 +10,7 @@ const App = (
         <Navbar title="React Gulp" color="deep-purple darken-2" />
         <div className="container">
             <Title />
-            <div className="row">
-                <div className="col s12 m4">
-                    <Card />
-                </div>
-            </div>
+            <Card col='3' />
         </div>
     </div>
 )

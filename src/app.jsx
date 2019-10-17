@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 
-import Title from './components/title/title';
-import Navbar from './components/navbar/navbar';
+import Title from './components/title/index';
+import Navbar from './components/navbar/index';
 
 const App = (
     <div className="root">

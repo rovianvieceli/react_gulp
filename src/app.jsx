@@ -10,7 +10,7 @@ const App = (
         <Navbar title="React Gulp" color="deep-purple darken-2" />
         <div className="container">
             <Title />
-            <Card col='3' />
+            <Card col='4' />
         </div>
     </div>
 )

@@ -4,7 +4,8 @@
   "description": "Curso React com Gulp",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "keywords": [
     "react"
@@ -18,6 +19,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-react-easy": "^0.1.9",
     "gulp-rename": "^1.2.2",
+    "nodemon": "^1.19.4",
     "react": "^15.4.0",
     "react-dom": "^15.4.0"
   },

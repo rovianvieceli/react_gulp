@@ -12,6 +12,7 @@
   "author": "Rovian Vieceli",
   "license": "MIT",
   "devDependencies": {
+    "axios": "^0.19.0",
     "express": "^4.17.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
@@ -19,5 +20,6 @@
     "gulp-rename": "^1.2.2",
     "react": "^15.4.0",
     "react-dom": "^15.4.0"
-  }
+  },
+  "dependencies": {}
 }

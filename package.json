@@ -12,6 +12,7 @@
   "author": "Rovian Vieceli",
   "license": "MIT",
   "devDependencies": {
+    "express": "^4.17.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-react-easy": "^0.1.9",

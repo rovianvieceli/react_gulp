@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Home",
+        "linkTo": "#Home"
+    },
+    {
+        "title": "About",
+        "linkTo": "#About"
+    },
+    {
+        "title": "Contact",
+        "linkTo": "#Contact"
+    },
+    {
+        "title": "Map",
+        "linkTo": "#Map"
+    }
+]

@@ -7,7 +7,7 @@ import Card from './components/card/card';
 
 const App = (
     <div className="root">
-        <Navbar title="React Gulp" color="deep-purple darken-2" />
+        <Navbar title="List of itens" color="deep-purple darken-2" />
         <div className="container">
             <Title />
             <Card col='3' />

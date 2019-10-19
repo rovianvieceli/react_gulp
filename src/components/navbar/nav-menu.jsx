@@ -2,20 +2,20 @@ import React from 'react';
 
 class NavMenu extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
 
-        this.state = { active: 'Home' }
-        this.setActive = this.setActive.bind(this)
+        this.state = { active: 'Home' };
+        this.setActive = this.setActive.bind(this);
     }
 
     setActive(menu, event) {
-        this.setState({ active: menu.title })
+        this.setState({ active: menu.title });
     }
 
     render() {
-        const self = this;
         const { menus } = this.props;
         const { active } = this.state;
+
         return (
             <ul id="nav-mobile" className="right">
                 {menus.map((menu, index) => (

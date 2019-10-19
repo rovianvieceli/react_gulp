@@ -6,8 +6,9 @@ class Title extends React.Component {
      *  - antes do componente existir
      */
     constructor(props) {
-        super(props)
-        this.state = { hora: new Date() }
+        super(props);
+
+        this.state = { hora: new Date() };
     }
 
     /**
@@ -15,9 +16,7 @@ class Title extends React.Component {
      *  - componente "vivo"
      */
     componentDidMount() {
-        this.horaId = setInterval(() => (
-            this.setState({ hora: new Date() }),
-        1000))
+        this.horaId = setInterval(() => (this.setState({ hora: new Date() }), 1000));
     }
 
     /**
@@ -25,13 +24,23 @@ class Title extends React.Component {
      *  - componente é destruido
      */
     componentWillMount() {
-        clearInterval(this.horaId)
+        clearInterval(this.horaId);
     }
 
     render() {
         const { hora } = this.state;
 
-        return <h1>{`Olá eu sou um Component ${hora.toLocaleTimeString()}`}</h1>;
+        return (
+            <div className="row">
+                <h6>
+                    Wellcome
+                    <div className="badget valign-wrapper right">
+                        <i className="material-icons">access_time</i>
+                        {hora.toLocaleTimeString()}
+                    </div>
+                </h6>
+            </div>
+        );
     }
 }
 

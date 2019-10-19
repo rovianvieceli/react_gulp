@@ -6,12 +6,13 @@ import Api from '../../services/api';
 
 class Card extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
 
-        this.state = { list: [], click: 0, search: '', server: [] }
-        this.setClick = this.setClick.bind(this)
-        this.setSearch = this.setSearch.bind(this)
-        this.onSubmit = this.onSubmit.bind(this)
+        this.state = { list: [], click: 0, search: '', server: [] };
+
+        this.setClick = this.setClick.bind(this);
+        this.setSearch = this.setSearch.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
     }
 
     async componentDidMount() {
@@ -49,14 +50,14 @@ class Card extends React.Component {
             if (
                 item.title.toUpperCase().indexOf(search.toUpperCase()) > -1
                 || item.description.toUpperCase().indexOf(search.toUpperCase()) > -1
-                || item.details.toUpperCase().indexOf(search.toUpperCase()) > -1
+                || item.detail.toUpperCase().indexOf(search.toUpperCase()) > -1
             ) {
                 return item;
             }
 
         });
 
-        this.setState({ list: found })
+        this.setState({ list: found });
     }
 
     render() {
@@ -67,7 +68,7 @@ class Card extends React.Component {
             <section>
                 <Search fnSetSearch={this.setSearch} fnOnSubmit={this.onSubmit} find={search} />
                 <div className="row">
-                    <p>Cliques: {click}</p>
+                    <p>Open Details times: {click}</p>
                     {list.map((item, index) => (
                         <div key={index} className={`col s12 m${col}`}>
                             <CardInfo data={item} fnClick={this.setClick} />

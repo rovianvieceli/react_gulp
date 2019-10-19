@@ -2,16 +2,18 @@ import React from 'react';
 
 class CardInfo extends React.Component {
     constructor(props) {
-        super(props)
-        this.handlerClick = this.handlerClick.bind(this)
+        super(props);
+
+        this.handlerClick = this.handlerClick.bind(this);
     }
 
     handlerClick() {
-        this.props.fnClick()
+        this.props.fnClick();
     }
 
     render() {
         const { data } = this.props;
+
         return (
             <div className="card sticky-action">
                 <div className="card-image waves-effect waves-block waves-light">
@@ -23,12 +25,12 @@ class CardInfo extends React.Component {
                     <p>{data.description}</p>
                 </div>
                 <div className="card-action">
-                    <a href={data.link}>Ver mais</a>
+                    <a href={data.link}>More...</a>
                 </div>
                 <div className="card-reveal">
-                    <span className="card-title grey-text text-darken-4">Title
+                    <span className="card-title grey-text text-darken-4">{data.title}
                         <i className="material-icons right">close</i></span>
-                    <p>{data.details}</p>
+                    <p>{data.detail}</p>
                 </div>
             </div>
         );

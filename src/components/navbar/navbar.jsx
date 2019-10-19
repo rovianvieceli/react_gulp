@@ -5,9 +5,9 @@ import Api from '../../services/api';
 
 class Navbar extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
 
-        this.state = { menu: [] }
+        this.state = { menu: [] };
     }
 
     async componentDidMount() {

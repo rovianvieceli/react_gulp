@@ -8,3 +8,7 @@
 
 ### Install
 npm install
+
+### External Datas
+* http://www.filltext.com/
+* https://picsum.photos/
